@@ -1,0 +1,333 @@
+ Procedure oriented programming : task oriented
+Object oriented programming : modular approach
+
+launchRocket = Complicate, not flexible
+
+Rocket
+	Fuel tank
+		pump fuel
+	exhaust chamber
+		exhuast flame
+	propulsion
+		burn fuel combust
+	cockpit
+		astronaut work
+	
+	
+	
+	
+	BankingAccount
+		accountNumber, customername, deposit,interestRate,
+		transfer,security, money,withdraw
+	
+	Method = functions	
+	(Action)Does a : deposit,transfer,secutiry,withdraw, updateAddres
+		deposit = balance increases
+		transfer = balance decreases
+		updateAddress = address change
+			
+	Variable = anything whose value tend to change
+	(Attributes) Has a : accountNumber, customerName,interstRate,balance
+		
+	
+	Amazon
+		product, buyer, seller, reviews, add2Cart, checkout, name,address
+	
+	
+	java program
+	{
+		attribute/variable
+		
+		action/method
+			logic
+	
+	}
+	
+	Bank java program
+	{
+		funds
+		
+		deposit
+			fund increases
+	
+	}
+	
+	
+	
+FacebookCustomer
+	has-a 
+		name,address,friends,age
+		
+		
+Architect : develops/creates HOUSE PLAN(blueprint)
+builder : constructs house real estate land(Space)
+
+java programmer : develop(code) plan(blueprint) for FB customer
+Java platform : constructs digital FB customer in memory(space)
+
+heritage
+inherit - accquire from your parent,grandparent,family
+	house, dna, genes, property
+	no effort, no work
+	REUSABLE
+
+IphoneX
+	call
+	message
+	browse
+	camera
+	fingerprintscan
+
+Iphone11
+	call NO CODE NEEDED .. INHERIT from IphoneX
+	message NO CODE NEEDED .. INHERIT from IphoneX
+	browse NO CODE NEEDED .. INHERIT from IphoneX
+	camera NO CODE NEEDED .. INHERIT from IphoneX
+	fingerprintscan NO CODE NEEDED .. INHERIT from IphoneX
+	facial recognisiiono
+	
+	
+	
+CELLPHONE/LAPTOP/
+	How it works ? wireless engineer, Laptop Hardware engineer (ENCAPSULATION)
+	How to use ? Customer (ABSTRACTION)
+	
+	
+	
+	
+Has-a
+does-a
+
+inheritance
+abs
+encap
+poly
+
+Amazon
+	HAS-A buyer,seller,products
+	DOES-A login,add2Cart,buy,sell,checkout,payment
+		login- poly
+		payment-poly
+		
+	Person
+		name
+		address
+		age
+	Buyer inherits from person
+		creditcard
+		billing address
+	Seller inherits from person
+		products
+		
+Amazon
+	10000 of IT employee
+	
+	15 it programmer = login section of website
+	15 programmer = check out page ( Abstraction for you.. from banking transfer perspecitve)
+	15 programmer = banking transaction page
+	
+	
+	
+		
+************** HAS-A ... data... variable ************
+
+requirement gathering
+requirement analysis
+Development
+
+
+Amazon
+	Has-A = variables = memory, store information
+	Does-A = methods = processing information
+	
+Computing device
+	cellphone,laptop
+	Memory = store information
+	CPU = process information
+	
+vary/varies = change
+
+BankAccount
+	Has-A : accountNumber, balance, name, isSuspended, customerAddress ,
+	
+	name = 
+		single character ? char 
+		group of character ? String 
+		number ? byte, short, int, long
+		fraction number ? float,double
+		yes/no ? boolean
+		complex ? CREATE ANOTHER PROGRAM
+
+// { } = curly bracket or code block
+public class BankAccount{
+	
+	// data type	name of information/data/variable
+	     long 		accountNumber; // declaration line
+	     float	balance;
+	     String  name;
+	     boolean  isSuspended;
+	     Address customerAddress;
+}
+.. user defined data type
+public class Address{
+	String streetName;
+	int buildingNumber;
+	String city;
+	String state;
+	int zip;
+}
+
+Variables :
+	What is Variable
+		container/holds information
+		something that changes : information stored in variable are bound to change
+	Data types
+	Data structure
+	Values 
+	Declaration rules
+	Initialization rules
+	Assignment rules
+	Rules on Data
+		Reading data
+		changing data
+	Scope of Data
+		Data that is part of you or defines you - global
+		Data that is provided to you by other - parameter
+		Data that u hold on temprory basis - local
+	Accessing Data
+		Within
+		
+	
+ *********** Declaration rules ***********
+	Declration line includes.... Data type followed by variable name
+	variable cannot be assigned with a value before declaration a data type
+	variable names : same program and same block
+		u cannot have 2 similar variable names
+		can contain alphabets, numbers, $, _
+		start with alphabet or $ or _ 
+		coding practice
+			naming convention - camelCase
+			choose a relevant meaningful names
+	
+	
+******** initialization rules ****
+	Value assigned to a variable for the FIRST time.
+	values should match the data type on LHS
+	RHS can be literal value or variable of same type
+	
+	
+
+Methods :
+	********* Method Declaration	*********
+		how to recognize methods : Does-A exercise
+		how to code methods :
+			What to name this activity ??? <<NAME>>
+			how many inputs are required ??? what are the data type of each inputs ???
+			how many outputs are required ??? what is the data type of each output ???
+		
+		PUBLIC 	OUTPUT 	NAME	(INPUT)
+	
+	
+		NAME : similar rules as variables
+			Follow camelCase format in method names
+			Alphabets , numbers, $, _ allowed in method names
+	
+		OUTPUT : CAN ALWAYS BE 0 or 1 
+			0 = void  ... 
+				public  void hello(String message)
+			1 = appropriate data type, int/boolean... 
+				public int add(int a, int b)
+			more than 1 = complex or multiple infor to return, create an object data type 
+				public Profile display(String userid)
+				
+		INPUT : CAN ALWAYS BE 0 or MORE 
+			0 = if no input require, leave it empty
+				public int bye(  )
+			More = if more than 1 input , separated by comma. data type followed by the name 
+				public int add(int number1, int number2)
+
+	********* Method Body - logic/ instructions ********* 
+	
+		LOGIC : use control flows and operators for logic.
+		
+		
+		RETURN STATEMENT :
+		
+			if void output - no return required
+			if anything but void - return required
+				primitive data type - 
+					literal value that matches output data type 
+						or 
+					variable that matches output data type 
+				Object /complex data type
+					variable that matches output data type 
+					
+					
+						
+						
+						
+						
+how to recognize methods : Does-A exercise
+		how to code methods :
+			What to name this activity ??? <<NAME>>
+			how many inputs are required ??? what are the data type of each inputs ???
+			how many outputs are required ??? what is the data type of each output ???
+		
+		PUBLIC 	OUTPUT 	NAME	(INPUT) parenthesis
+
+		
+		
+		Java programs
+	Variable(HAS-A) = holding information
+	Methods(DOES-A) = read/change information
+	
+BankAccount
+	balance=100;
+	
+	withdraw(20)
+	public boolean withdraw( int amount)
+		balance=80// changing value of variable
+	
+	deposit(30)
+		balance =130// changing value of variable
+	
+	checkBalance()
+		you have 100$ // reading value of variable
+		
+		
+how to code methods :
+	What to name this activity ??? checkBalance
+	
+	how many inputs are required ??? 0
+	what are the data type of each inputs ??? 
+	
+	how many outputs are required ??? 1
+	what is the data type of each output ??? int
+
+	public 	OUPUT_DATATYPE 		ACITIVITY_NAME(  	INPUT_DATATYPE 	VARI_NAME)
+		
+	area of triangle = 
+	area of square
+	bank simple interest calculator
+	
+	Method declaration
+	0 input 	  = public int checkBalance( )
+	1 input 	  = public boolean withdraw( int amount)
+more than 1 input = public int areaOfRectangle(int length, int breadth) 
+		
+	0 output	  = public void	donation(int amount)
+	1 output 	  = public int areaOfRectangle(int length, int breadth) 
+more than 1 output=	public String,String,int,String getAddress(String custName)		
+				public Address getAddress(String custName)
+	calculate area of rectangle =  length 3 X breadth 4 = 12
+	
+	
+	get customers address
+	input 1= String customerName
+	Ouput more = 
+	public class Address{
+		String city,String street,int zip, String country;
+	}
+	
+	
+	
