@@ -330,4 +330,56 @@ more than 1 output=	public String,String,int,String getAddress(String custName)
 	}
 	
 	
-	
+******** operator statements blocks ***********
+
+Programming line that ends with ; are statements
+	declaration 
+		int x;
+	initialization
+		int y=10;
+	assignment
+		y=20; 
+	method call or invocation
+		withdraw(100);
+		
+
+		
+Bank 
+	balance=100;
+
+
+	withdraw( 50 ){
+		
+		if ( withdraw amount is greater than balance )
+		{ // error code block
+			Error : sorry for the inconvinince, please withdraw within your balance limit
+		}
+			
+		if ( withdraw amount is less than balance )
+		{ // success code block
+			give cash
+			show latest balance
+			thank you for using java bank
+		}
+		
+	}
+
+
+*********** assignment operator **********
+LHS	=	RHS
+
+1) LHS should always be a variable
+2) LHS should have data type
+3) RHS can be variable or literal value of same type
+4) RHS data type should match LHS data type
+5) RHS can also have expressions OR method call
+
+int a=10; // valid
+10=int a; // invalid #1
+int b = a; // valid
+a=int b ;  // invalid #2
+int a="john"; // invalid #4
+
+********** arithmetic operator **********
+
+
