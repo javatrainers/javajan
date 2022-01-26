@@ -382,4 +382,53 @@ int a="john"; // invalid #4
 
 ********** arithmetic operator **********
 
+conditional operator
+
+&&
+True and True = True (login webpage attempt)
+True and false = false
+false and True = false 
+false and false = false
+
+||  (unlock by email id OR Phone)
+True or True = True
+True or false = True
+false or True = True
+false or false = false
+
+True ex-or True = false
+True ex-or false = True
+false ex-or True = True
+false ex-or false = false
+
+
+= 28 L to R , 50 R to L
+
+1) () bracket
+2) * / mul div
+3) + - add sub
+4) > < relational
+5) &&
+6) ||
+If symbols at same level = then go from Left to right
+
+10 + 5 * 2 - (6 + 4) > 10 + 20 * 30 || 20 + 30 > 10
+10 + 5 * 2 - 10 > 10 + 20 * 30 || 20 + 30 > 10
+10 + 10 - 10 > 10 + 20 * 30 || 20 + 30 > 10
+10 + 10 - 10 > 10 + 600 || 20 + 30 > 10
+20 - 10 > 10 + 600 || 20 + 30 > 10
+10 > 10 + 600 || 20 + 30 > 10
+10 > 610  || 20 + 30 > 10
+10 > 610 || 50 > 10
+false || 50 > 10
+false || true
+true
+
+
+
+
+
+10 + 5 * 2 - (6 + 4) > 10 + 20 * 30 || 20 + 30 > 10
+10 + 5 * 2 - (6 + 4) > 10 + 20 * 30 || 50 > 10
+10 + 5 * 2 - (6 + 4) > 10 + 20 * 30 || true 
 
