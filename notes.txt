@@ -342,6 +342,10 @@ Programming line that ends with ; are statements
 	method call or invocation
 		withdraw(100);
 		
+; in any OTHER places is considered as empty block
+{
+
+}
 
 		
 Bank 
@@ -431,4 +435,27 @@ true
 10 + 5 * 2 - (6 + 4) > 10 + 20 * 30 || 20 + 30 > 10
 10 + 5 * 2 - (6 + 4) > 10 + 20 * 30 || 50 > 10
 10 + 5 * 2 - (6 + 4) > 10 + 20 * 30 || true 
+
+****************** control flows ***********
+
+switch case is faster than if-else if
+	suitable ONLY for primitive variables == operator
+		
+switch case not suitable for different operator expressions
+
+int a=10;
+String name="john";
++ = concatenation, joining, append
+
+System.out.println("hi how are "+"bye bye");
+hi how are bye bye
+
+System.out.println("hi how are "+a);
+hi how are 10
+
+System.out.println("hi how are "+name);
+hi how are john
+
+
+
 
