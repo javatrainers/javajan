@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class ControlFlowTest {
 
@@ -42,6 +43,32 @@ public class ControlFlowTest {
 			System.out.println("x is unknown");
 		}
 		System.out.println("bye bye");
+		
+		for( int i=0; i < 4 ; i++){
+			System.out.println("hello");
+			if(i==2){
+				break;
+			}
+			System.out.println("hi");
+		}
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("add to cart ? true/false");
+		boolean add2Cart=sc.nextBoolean();
+		while(add2Cart) {
+			System.out.println("added item to cart");
+			System.out.println("add another item to cart ? true/false");
+			add2Cart=sc.nextBoolean();
+		}
+		
+		boolean atmTran=false;
+		do{
+			System.out.println("ATM transaction processed");
+			System.out.println("do you have any other request ? true/false");
+			atmTran=sc.nextBoolean();
+		}while(atmTran);
+		
+		
 		
 	}
 

@@ -458,4 +458,85 @@ hi how are john
 
 
 
+Loop
+	FOR		= FIXED number of iterations ( booking flight... fixed seats )
+	WHILE	= 0 or more number of iterations (Shopping add2 cart )
+	DO-WHILE  = 1 or more number of iterations ( ATM )
+	
 
+for(Initialization;	ConditionCheck;	Modification)
+{
+	Execution
+}
+
+
+for( int i=0; i < 4 ; i=i+2){
+	Sysout("hello");
+}
+
+ICE	:	i=0,true,print hello	
+MCE	:	i=2,true,print hello
+MCE	:	i=4,false
+MCE	:	
+MCE	:	
+MCE
+
+
+Continue : Skips all remaining line in the for execution block
+Break : exits the for loop entirely
+	
+
+for( int i=0; i < 4 ; i++){
+	Sysout("hello");
+	if(i==2){
+		continue;
+	}
+	Sysout("hi");
+}
+
+ICE	:	i=0,true,print hello print hi
+MCE	:	i=1,true,print hello print hi
+MCE	:	i=2,true,print hello
+MCE	:	i=3,true,print hello print hi
+MCE	:	i=4,false
+MCE
+
+for( int i=0; i < 4 ; i++){
+	Sysout("hello");
+	if(i==2){
+		break;
+	}
+	Sysout("hi");
+}
+
+ICE	:	i=0,true,print hello print hi
+MCE	:	i=1,true,print hello print hi
+MCE	:	i=2,true,print hello
+MCE	:	
+MCE	:	
+MCE
+
+
+0 or MORE
+while(condition_check){
+
+	While Execution block
+
+}
+
+1 or MORE
+do{
+
+	Do while execution block
+
+}while(condition_check);
+
+
+
+
+
+
+
+
+	
+	
