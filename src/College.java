@@ -8,6 +8,8 @@ public class College {
 		int x=10;
 		String p="john";
 		s1.add(x,p);//method call
+		//s1.sub(x,p);//method call
+		
 		/*
 		 1) number of input passed
 		 2) data type of input passed

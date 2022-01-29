@@ -531,12 +531,43 @@ do{
 
 }while(condition_check);
 
+/******* NEW INHERITANCE RULES FOR = AND METHOD CALL*****
+
+	int x=10;
+	int y=20;
+	x=y; // LHS data type should match RHS data type
+	
+	int p=20;
+	add(p); // Method call - 
+		 // data type of passing variable "p" should match 
+		 // method parameter data type "a"
+
+	public void add(int a){
+	
+	}
+	
+**** RHS data type can be child of LHS data type
+	Iphone >>> Iphone3 >>>> Iphone5
+	Iphone i=new Iphone3();
+	
+		
+******* passing variable data type can be child of parameter data type
+	Car class >>>> Nissan class
+	Car ca=new Car();
+	Nissan n=new Nissan();
+	drive(n);
+
+	public void drive(Car c)
 
 
-
-
-
-
-
+Compiletime  polymorphsm
+	same method name
+	different input
+	can happen in same class or parent child class
 	
 	
+Runtime polymorphsm
+	same method name, input, output
+	cannot be done in same class needs to be in parent and child class
+
+
