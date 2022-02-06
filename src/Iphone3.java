@@ -1,11 +1,12 @@
 
 public class Iphone3 extends Iphone{
-	public Iphone3() {
+	int x=20; // parent/super variable
+	public Iphone3() { // parent/super constructor
 		super();
 		System.out.println("constructing parent");
 	}
 	
-	public void camera() {
+	public void camera() {//parent /super method
 		System.out.println("take pictures");
 	}
 }

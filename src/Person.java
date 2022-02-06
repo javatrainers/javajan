@@ -45,7 +45,7 @@ public class Person {
 	
 	public void testing() {
 		System.out.println(name);
-		System.out.println(message);
-		System.out.println(a);
+		//System.out.println(message); cant access local variable from other methods
+		//System.out.println(a);
 	}
 }

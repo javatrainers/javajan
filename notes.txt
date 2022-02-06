@@ -571,3 +571,168 @@ Runtime polymorphsm
 	cannot be done in same class needs to be in parent and child class
 
 
+interface IIphone (wish list or to-do list)
+	public void text();
+	public void call();
+	public default void internetBrowse
+		sysout("aasdad");
+	
+	
+class Iphone3 implements IIphone
+	public void text
+		adsadasd
+	public void call
+		asqwe
+
+class Iphone4 extends Iphone3
+	public void maps
+		adasdasdasd
+class Iphone5 extends Iphone4
+	public void applePay
+		adasdasdasd
+class IphoneX extends Iphone5
+	public void facialRecognition
+		adasdasdasd
+
+Backward compatibility = fix for this limitation is to provide default methods in interface that can have method
+	body.
+	
+	
+	
+	
+NissanAltima basic
+NissanAltima SE
+	better speaker
+NissanAltima XE
+	better speaker and auto parallel parking 
+NissanAltima Limited edition
+	better speaker and auto parallel parking  and panaromic roof
+	
+90% of component COMMON or same in all above models ?
+10% of customized with new feature more money
+
+Abstract = Generalization/common
+
+
+NissanAltima basic
+NissanAltima SE
+NissanAltima XE
+NissanAltima Limited edition
+
+4 big / huge factories for 4 models above
+	
+1 big / huge factory to build 90% of common componets (ABSTRACT class)
+	
+3 small factories to build 10% of customization
+
+************************************
+
+
+********WITH ABSTRACT********
+
+IPayment
+	public void takeContactDetails;
+	public void address;
+	public void register;
+	public void transferMoney;
+	
+class abstract APayment
+	public void takeContactDetails
+		collect phone  and emailds
+	public void address
+		collect home address
+	public void register
+		collect userid and password
+class CreditCard extends APayment
+	public void transferMoney
+		charge customer's credit card
+	
+class Paypal extends APayment
+	public void transferMoney
+		charge customer's paypal account
+	
+class Crupto extends APayment
+	public void transferMoney
+		charge customer crypto wallet
+
+	
+	
+	********WITHOUT ABSTRACT********
+IPayment
+	public void takeContactDetails;
+	public void address;
+	public void transferMoney;
+	
+class CreditCard implement IPayment
+	public void takeContactDetails
+		collect phone and emailds
+	public void address
+		collect home address
+	public void transferMoney
+		charge customer's credit card
+	
+class Paypal implement IPayment
+	public void takeContactDetails
+		collect phone and emailds
+	public void address
+		collect home address
+	public void transferMoney
+		charge customer's paypal account
+	
+class Crupto implement IPayment
+	public void takeContactDetails
+		collect phone and emailds
+	public void address
+		collect home address
+	public void transferMoney
+		charge customer crypto wallet
+	
+**************************************
+PACKAGE
+
+www.amazon.com
+
+com.amazon.www.homePage
+	Login.java
+	Register.java
+com.amazon.www.browsePage
+	Shopping.java
+	Add2Cart.java
+com.amazon.www.checkOutPage
+	payment.java
+	CancelOrder.java
+	PlaceOrder.java
+
+
+Iphone > Iphone5 > IphoneX
+Car > Nissan > NissanZ60
+
+Child is-a Parent
+Nissan is-a Car
+NissanZ60 is-a Car
+NissanZ60 is-a Nissan
+
+IphoneX is-a Iphone
+IphoneX is-a Nissan
+
+
+ANY 2 programs if they are connected to each other
+	IS-A : inheritance (extends/implements)
+	HAS-A : create reference variable... with new operator
+	
+****************************************************************
+if a constructor is made private ... no connection can be built outside the  program
+	neither IS-A nor HAS-A
+****************************************************************	
+	
+	
+	
+	
+	
+*********************** Static and final ***********************
+
+
+
+
+
+

@@ -6,4 +6,9 @@ public class Vehicale {
 	public void start() {
 		
 	}
+	
+	public void int(  ) {
+		
+	}
+	
 }
