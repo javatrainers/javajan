@@ -731,6 +731,54 @@ if a constructor is made private ... no connection can be built outside the  pro
 	
 *********************** Static and final ***********************
 
+static variable = shared information across the class instances
+static method = utility method that can serve multiple usage
+
+all static variable and method can be accessed by class name and does not require to create
+instance/object using new operator
+
+
+Variable =	something that changes
+method = Polymorphism
+class = Inheritance
+
+Final = constant/unchangeable
+
+if a variable is not suppose to change its value... such as brandName variable
+final variable = cannot change value
+
+A perfect method solution. that doesnt require any change in future ever
+final method = you CANNOT do polymorhism
+
+If all methods in the class is perfect or final.. declare the entire class itself as final
+final class = you CANNOT do inheritance
+
+***************************************************
+
+
+// declaration and initialization
+FacebookAccount fb2=new FacebookAccount(); // Reference address where info can be stored
+
+//declaration
+FacebookAccount fb; 
+// initalization
+fb=new FacebookAccount();
+
+
+new FacebookAccount(); // INITIALIZATION
+new FacebookAccount[5]; // ARRAY DECLARATION
+
+FacebookAccount[] allCustomer=new FacebookAccount[5];
+		EQUAL TO
+FacebookAccount fb1;  // NULL
+FacebookAccount fb2; // NULL
+FacebookAccount fb3;
+FacebookAccount fb4;
+FacebookAccount fb5;
+
+
+
+
 
 
 
