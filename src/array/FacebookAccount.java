@@ -1,6 +1,7 @@
 package array;
 
 public class FacebookAccount {
-	String name;
-	String status;
+	public String name="john";
+	public String status="online";
+	public Address addr=new Address();
 }

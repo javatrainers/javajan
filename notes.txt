@@ -778,9 +778,88 @@ FacebookAccount fb5;
 
 
 
+*********************** exception handling *******************
+
+1) customer : 
+	a)Upon program failure/crash, rather than tech error message provide easy to understand 
+	error message to customers
+	b)diffferent error message for each failures
+		ATM
+			card in corrupted/damaged
+			card is expired
+			wrong atm pin
+			insufficient fund in account
+			
+		Sorry for the inconvinience
+			
+2) developer :
+	you can pin point exact program name, method name, line number
+	also reason for failure
 
 
 
+method stack
+Exception stack trace
+Exception in thread "main" java.lang.ArithmeticException: / by zero ***WHAT IS THE PROBLEM***
+	at exceptin.Test.method3(Test.java:14)  **** WHERE IS THE PROBLEM ****
+	at exceptin.Test.method2(Test.java:10)
+	at exceptin.Test.method1(Test.java:6)
+	at exceptin.TestException.main(TestException.java:7) *** WHERE IT ALL BEGAN *****
 
 
+try
+	Programming line that we suspect might fail
 
+catch
+	actions to be taken in the event of failure
+
+finally
+	guaranteed execution block
+	
+	
+try-catch
+try-catch-catch
+try-catch-finally
+try-catch-catch-finally
+try-finally
+
+
+NullPointerException
+
+
+multiple catch blocks ORDER
+
+	child
+	parent
+	grand parent
+	Great great grand parent Throwable
+
+
+Throws : compile time exception should be handled in code before run/execution of program
+	the method can choose to handle by try/catch or "throws" to let caller handle that.
+	
+	
+User-Defined Exception
+
+
+BankingChecking
+	int balance=100;
+	
+	public void withdraw(int amount){
+		balance=balance-amount; // -25
+		// NO TECHNICAL LIMITATION FOR NEGTIVE NUMBER IN INTEGER
+		// BUSINESS LIMITATION - USER DEFINED EXCEPTION
+	}
+	
+
+withdraw(125);
+
+
+Telecom
+	public void call(long phoneNumber)
+		asdsada dial the number
+	
+	
+	
+call(12);	
+	

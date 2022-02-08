@@ -1,5 +1,6 @@
 
 public class TestPerson {
+	// x and p1 are input variables
 	public void method1(int x, Person p1) {
 		x=30;
 		method2(x,p1);
