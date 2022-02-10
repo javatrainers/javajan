@@ -863,3 +863,17 @@ Telecom
 	
 call(12);	
 	
+**************** String ***************
+
+immutable = unchangeable objects in memory
+
+String pool = Sharing Objects/values
+
+
+
+
+
+
+
+
+
