@@ -871,9 +871,81 @@ String pool = Sharing Objects/values
 
 
 
+************ collection *************
+
+if user defined program(self written program) is used in Set or Key section of a map
+addition code for categorization = hashCode method 
+addition code for duplicate check = equals method
+
+if user defined program(self written program) is used in "TreeSet"
+additional code for sorting as well = implement comparable interface
+	write the code for compareTo
 
 
 
+*********** file *******************
+
+Text File : human readable format
+	Character stream programs
+		FileReader : reading text files
+		BufferedReader : performance is better.. less trips between java and hard drive
+		FileWriter : writing text files
+		BufferedWriter : performance is better.. less trips between java and hard drive
+		
+		
+Binary File : machine readable format
+	Binary stream programs
+		InputStream : reading binary files
+		OutputStream : writing binary files
+		
+		
+String fileLocation="d:/tutorial/hello.txt";
+
+********* Text file = Character Stream ********* 
+File f=new File(fileLocation);
+// File : create/delete/verify files
+FileWriter fw=new FileWriter(f);
+// FileWriter : write contents in a text file
+BufferedWriter bw=new BufferedWriter(fw);
+// BufferedWriter : writer contents in BULK in text file
+bw.write("hi how are you "); // String represents - human readable text content
+
+
+********* Binary file = Byte Stream********* 
+File f=new File(fileLocation);
+// File : create/delete/verify files
+FileOutputStream fw=new FileOutputStream(f);
+// FileOutputStream : write contents in a binary file
+BufferedOutputStrem bw=new BufferedOutputStrem(fw);
+// FileOutputStream : writer contents in BULK in binary file
+byte[] binaryData=new byte[1000];
+bw.write(binaryData); // byte [] represents - machine readable binary content
 
 
 
+********* Text file = Character Stream ********* 
+File f=new File(fileLocation);
+// File : create/delete/verify files
+FileReader fw=new FileReader(f);
+// FileReader : read contents from a text file
+BufferedReader bw=new BufferedReader(fw);
+// BufferedReader : read contents in BULK from text file
+
+********* Binary file = Byte Stream********* 
+File f=new File(fileLocation);
+// File : create/delete/verify files
+FileInputStream fw=new FileInputStream(f);
+// FileInputStream : read contents from a binary file
+BufferedInputStrem bw=new BufferedInputStrem(fw);
+// BufferedInputStrem : read contents in BULK from binary file
+
+
+Serialization = process of storing java object in permanent/persistent memory 
+	location (Hard drive)
+de-Serialization = retrive the file from hard drive and restore java objects
+
+	
+	
+
+
+		
